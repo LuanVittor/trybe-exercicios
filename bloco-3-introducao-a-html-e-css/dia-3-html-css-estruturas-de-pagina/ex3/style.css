@@ -1,40 +1,14 @@
-div:hover{
-    border: 2px solid black;
-}
-.primaria{
-    background-color: chocolate;
-    color: crimson;
-    font-style: italic;
+p, h1{
+    text-align: center;   
 }
 
-.secundaria{
-    background-color: green;
-    color: blue;
+li:hover{
+background-color: pink;
 }
 
-.complementar{
-    background-color: blueviolet;
-    color: black;
-    height: 150px;
-    text-align: center;
-    font-style: italic;
+li:active{
+    color: yellow;
 }
-
-.escura{
-    background-color: black;
-    color: grey;
+li{
+    list-style: none;
 }
-
-.clara{
-    background-color: hotpink;
-    color: burlywood;
-    font-style: italic;
-}
-
-h3{
-    font-family: fantasy;
-    font-size: larger;
-    font-weight: 100px;
-    font-style: oblique;
-}
-
