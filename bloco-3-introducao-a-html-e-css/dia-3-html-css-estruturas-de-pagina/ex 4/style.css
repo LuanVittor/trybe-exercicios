@@ -1,0 +1,40 @@
+div:hover{
+    border: 2px solid black;
+}
+.primaria{
+    background-color: chocolate;
+    color: crimson;
+    font-style: italic;
+}
+
+.secundaria{
+    background-color: green;
+    color: blue;
+}
+
+.complementar{
+    background-color: blueviolet;
+    color: black;
+    height: 150px;
+    text-align: center;
+    font-style: italic;
+}
+
+.escura{
+    background-color: black;
+    color: grey;
+}
+
+.clara{
+    background-color: hotpink;
+    color: burlywood;
+    font-style: italic;
+}
+
+h3{
+    font-family: fantasy;
+    font-size: larger;
+    font-weight: 100px;
+    font-style: oblique;
+}
+

@@ -1,0 +1,14 @@
+p, h1{
+    text-align: center;   
+}
+
+li:hover{
+background-color: pink;
+}
+
+li:active{
+    color: yellow;
+}
+li{
+    list-style: none;
+}
