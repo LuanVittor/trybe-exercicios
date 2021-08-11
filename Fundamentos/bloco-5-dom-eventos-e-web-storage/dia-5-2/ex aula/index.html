@@ -1,0 +1,70 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+  <script>
+   document.querySelector("#elementoOndeVoceEsta").parentNode.style.color = "green";
+
+   document.querySelector("#primeiroFilhoDoFilho").innerText = "qualquer coisa"
+
+   document.querySelector("#pai").firstElementChild
+
+   document.querySelector("#elementoOndeVoceEsta").nextSibling
+
+   document.querySelector("#elementoOndeVoceEsta").nextElementSibling
+
+   document.querySelector("#pai").lastElementChild.previousElementSibling
+
+//Criando um irmão para elementoOndeVoceEsta
+
+let irmaoDoElemento = document.createElement('section');
+  irmaoDoElemento.id = 'irmaoDoElementoOndeVoceEsta';
+  let pai = document.getElementById('pai');
+  pai.appendChild(irmaoDoElemento);
+
+  //Criando um filho para elementoOndeVoceEsta
+
+  let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+  let filhoDoElementoOndeVoceEsta = document.createElement('section');
+  filhoDoElementoOndeVoceEsta.id = 'filhoDoOndeVoceEsta';
+  elementoOndeVoceEsta.appendChild(filhoDoElementoOndeVoceEsta);
+
+  //Criando um filho para primeiroFilhoDoFilho
+
+  let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+  let filhoDoFilho = document.createElement('section');
+  filhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+  primeiroFilhoDoFilho.appendChild(filhoDoFilho);
+
+  //Acessando terceiro filho a partir do filho criado
+
+  document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentNode.parentNode.nextElementSibling;
+
+  // Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
+ for (let index = pai.children.length - 1; index >=0  ; index -= 1){
+   let crianca = pai.children[index]
+   if (crianca.id !== "elementoOndeVoceEsta") {
+     pai.removeChild(crianca)
+   }
+ }
+
+  let segudoEUltimo = document.getElementById('elementoOndeVoceEsta')
+  for (let index = segudoEUltimo.children.length - 1; index >=0  ; index -= 1){
+   let crianca2 = segudoEUltimo.children[index]
+   if (crianca2.id !== "primeiroFilhoDoFilho") {
+     segudoEUltimo.removeChild(crianca2)
+   }
+ }
+
+ primeiroFilhoDoFilho.removeChild(filhoDoPrimeiroFilhoDoFilho)
+
+  </script>
+</main>
