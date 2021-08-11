@@ -60,7 +60,6 @@
 //       Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
 var h1 = document.createElement("h1");
 h1.innerText = 'Exercício 5.2 - JavaScript DOM '
-h1.id = 'titulo';
 let body = document.getElementsByTagName('body')[0];
 body.appendChild(h1);
 
@@ -109,10 +108,32 @@ for (let i in array) {
 }
 
 // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
-  for (let count = 1; count <=3; count += 1){
+  for (let i = 1; i <=3; i += 1){
     h3 = document.createElement('h3')
     main.appendChild(h3)
   }
+
+  // Adicione a classe title na tag h1 criada;
+h1.className = 'title'
+
+// Adicione a classe description nas 3 tags h3 criadas;
+let hh3 = document.getElementsByTagName('h3')
+for(let i = 0; i <=2; i += 1) {
+  hh3[i].className = 'description'
+}
+
+// Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+main.removeChild(section2)
+
+// Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+section3.style.marginRight = 'auto'
+
+// Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+section.parentNode.style.backgroundColor = 'green'
+
+// Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+ul.lastElementChild.remove()
+ul.lastElementChild.remove()
 
     </script>
   </body>
