@@ -206,3 +206,24 @@ function addEvent(event) {
 // Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
 // Ao pressionar a tecla "enter" o evento também deverá ser disparado.
 // Dica - Propriedade: keyCode .
+
+let compromisso =getElementById("task-input");
+compromisso.addEventListener("keypress", addComp);
+
+function addComp(event) {
+  if (event.keyCode === 13) {
+    click()
+  }
+}
+let adicionar = document.getElementById("btn-add")
+adicionar.addEventListener("click", click)
+
+function click(){
+  input()
+}
+
+compromisso.addEventListener("input" input)
+
+function input() {
+ // paramos com funcao click e enter feitas e desenvolvendo a funcao de criar li e armarzenar seu conteudo
+}
