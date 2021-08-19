@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="pri">
+</head>
+
+<body>
+  <form action="" method="get">
+    <fieldset>
+      <label for="nome">Nome Completo:
+      <input class="oi" type="text" name="Nome: " id="nome" maxlength="40" required>
+    </label>
+      <br>
+      <br>
+      <label for="email">Seu email:
+      <input class="oi" type="email" name="Email: " id="email" maxlength="50" required>
+    </label>
+      <br>
+      <br>
+      <label for="cpf">Seu CPF: 
+      <input class="oi" type="text" name="CPF: " id="cpf" maxlength="11" required>
+    </label>
+      <br>
+      <br>
+      <label for="endereco">Seu endereco: 
+      <input class="oi" type="text" name="Endereco: " id="endereco" maxlength="200">
+    </label>
+      <br>
+      <br>
+      <label for="cidade">Sua Cidade: 
+      <input class="oi" type="text" name="Cidade: " id="cidade">
+    </label>
+      <br>
+      <br>
+      <label for="estado">Estado: 
+      <select class="oi" name="Estado: " id="estado"></select>
+    </label>
+      <br>
+      <br>
+      <input class="oi" type="radio" name="Tipo: " id="casa" value="Casa"> Casa
+      <input class="oi" type="radio" name="Tipo: " id="apartamento" value="Ap"> Apartamento
+    </fieldset>
+    <br>
+    <fieldset>
+      <label for="curriculo">Resumo do seu Curriculo:
+      <br>
+      <textarea class="oi" name="Resumo Curriculo: " id="curriculo" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui" required></textarea>
+      </label>
+      <br>
+      <br>
+      <label for="cargo">Cargo: 
+      <input class="oi" type="text" name="Cargo: " id="cargo" maxlength="40" required>
+    </label>
+      <br>
+      <br>
+      <label for="descricao">Descricao do cargo: 
+      <br>
+      <textarea class="oi" name="Descricao de Cargo: " id="descricao" cols="30" rows="5" maxlength="500" placeholder="Digite aqui" required></textarea>
+      </label>
+      <br>
+      <br>
+      <label for="inicio">Data de inicio: 
+      <input class="oi" type="date" name="Data de inicio: " id="fim" min="1950-01-01" max="2021-12-31" required>
+    </label>
+    </fieldset>
+    <button type="submit" id="send">Enviar Curriculo</button>
+    <button type="reset" id="clear-button">Limpar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
