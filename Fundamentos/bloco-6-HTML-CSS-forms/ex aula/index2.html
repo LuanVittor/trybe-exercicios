@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="get" enctype="multipart/form-data">
+    <label for="full-name">Nome completo:
+      <input type="text" name="nome" id="full-name" placeholder="digite seu nome" required>
+    </label>
+    <br>
+    <label for="email">email:
+      <input type="email" name="email" id="email" placeholder="digite seu email">
+    </label>
+    <br>
+    <label for="">estado onde vc mora
+      <select name="estado" id="estado-input" required>
+        <option value="sp">Sao Paulo</option>
+        <option value="rj"> Rio de Janeiro</option>
+        <option value="mg">minas gerais</option>
+      </select>
+      <br>
+    </label>
+    <p>envie sua foto:</p>
+    <input type="file" name="foto" id="foto perfil">
+    <br>
+    <label for="comida1">
+      <input type="radio" name="comida-favorita" id="comida1" value="bacon" checked>bacon
+    </label>
+    <label for="comida2">
+      <input type="radio" name="comida-favorita" id="comida2" value="carne">carne
+    </label>
+    <label for="comida3">
+      <input type="radio" name="comida-favorita" id="comida3" value="pizza">pizza
+    </label>
+    <label for="comida4">
+      <input type="radio" name="comida-favorita" id="comida4" value="franco">franco
+    </label>
+    <br>
+    <button type="submit">Enviar Formulario</button>
+  </form>
+</body>
+</html>
