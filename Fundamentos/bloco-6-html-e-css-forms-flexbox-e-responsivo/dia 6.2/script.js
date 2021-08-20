@@ -5,6 +5,11 @@ let body = document.querySelector('body')
 body.appendChild(div)
 let botaoSend = document.getElementById('send');
 
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems, estados);
+});
+
 for (let elementos of estados) {
   let creatOption = document.createElement('option');
   creatOption.innerText = elementos;

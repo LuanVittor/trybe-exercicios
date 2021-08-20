@@ -6,71 +6,97 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="pri">
+  <!-- api do google -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 </head>
 
 <body>
+  <h4>Forms curriculo</h4>
   <form action="" method="get">
     <fieldset>
-      <label for="nome">Nome Completo:
-      <input class="oi" type="text" name="Nome: " id="nome" maxlength="40" required>
-    </label>
+      <label for="nome"><i class="material-icons prefix">fingerprint</i>   Nome Completo:
+        <input class="oi" type="text" name="Nome: " id="nome" maxlength="40" required>
+      </label>
       <br>
       <br>
-      <label for="email">Seu email:
-      <input class="oi" type="email" name="Email: " id="email" maxlength="50" required>
-    </label>
+
+      <label for="email"> <i class="material-icons prefix">email</i>    Seu email:
+        <input class="oi" type="email" name="Email: " id="email" maxlength="50" required>
+      </label>
       <br>
       <br>
-      <label for="cpf">Seu CPF: 
-      <input class="oi" type="text" name="CPF: " id="cpf" maxlength="11" required>
-    </label>
+      <label for="cpf"><i class="material-icons prefix">add</i>    Seu CPF: 
+        <input class="oi" type="text" name="CPF: " id="cpf" maxlength="11" required>
+      </label>
       <br>
       <br>
-      <label for="endereco">Seu endereco: 
-      <input class="oi" type="text" name="Endereco: " id="endereco" maxlength="200">
-    </label>
+      <label for="endereco"> <i class="material-icons prefix">drive_eta</i> Seu endereco:
+        <input class="oi" type="text" name="Endereco: " id="endereco" maxlength="200">
+      </label>
       <br>
       <br>
-      <label for="cidade">Sua Cidade: 
-      <input class="oi" type="text" name="Cidade: " id="cidade">
-    </label>
+      <label for="cidade"> <i class="material-icons prefix">language</i> Sua Cidade:
+        <input class="oi" type="text" name="Cidade: " id="cidade">
+      </label>
       <br>
       <br>
-      <label for="estado">Estado: 
+      <div class="input-field col s12">
       <select class="oi" name="Estado: " id="estado"></select>
-    </label>
+      <label for="estado">Estado:</label>
+      </div>
       <br>
       <br>
-      <input class="oi" type="radio" name="Tipo: " id="casa" value="Casa"> Casa
-      <input class="oi" type="radio" name="Tipo: " id="apartamento" value="Ap"> Apartamento
+      <label for="casa"> Tipo de Moradia:
+        <input class="oi with-gap" type="radio" name="Tipo: " id="casa" value="Casa"> <span>Casa</span>
+      </label>
+      <label for="apartamento">
+        <input class="oi with-gap" type="radio" name="Tipo: " id="apartamento" value="Ap"> <span>Apartamento</span>
+      </label>
     </fieldset>
     <br>
     <fieldset>
-      <label for="curriculo">Resumo do seu Curriculo:
-      <br>
-      <textarea class="oi" name="Resumo Curriculo: " id="curriculo" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui" required></textarea>
+      <label for="curriculo"><i class="material-icons prefix">view_headline</i>   Resumo do seu Curriculo:
+        <br>
+        <br>
+        <textarea class="oi" name="Resumo Curriculo: " id="curriculo" cols="30" rows="10" maxlength="1000"
+          placeholder="Digite aqui" required></textarea>
       </label>
       <br>
       <br>
-      <label for="cargo">Cargo: 
-      <input class="oi" type="text" name="Cargo: " id="cargo" maxlength="40" required>
-    </label>
+      <label for="cargo"><i class="material-icons prefix">work</i> Cargo:
+        <input class="oi" type="text" name="Cargo: " id="cargo" maxlength="40" required>
+      </label>
       <br>
-      <br>
-      <label for="descricao">Descricao do cargo: 
-      <br>
-      <textarea class="oi" name="Descricao de Cargo: " id="descricao" cols="30" rows="5" maxlength="500" placeholder="Digite aqui" required></textarea>
+
+      <label for="descricao"><i class="material-icons prefix">view_headline</i>  Descricao do cargo:
+        <br>
+        <br>
+        <textarea class="oi" name="Descricao de Cargo: " id="descricao" cols="30" rows="5" maxlength="500"
+          placeholder="Digite aqui" required></textarea>
       </label>
       <br>
       <br>
-      <label for="inicio">Data de inicio: 
-      <input class="oi" type="date" name="Data de inicio: " id="fim" min="1950-01-01" max="2021-12-31" required>
-    </label>
+      <label for="inicio"><i class="material-icons prefix">access_time</i>    Data de inicio:
+        <input class="oi" type="date" name="Data de inicio: " id="fim" min="1950-01-01" max="2021-12-31" required>
+      </label>
     </fieldset>
-    <button type="submit" id="send">Enviar Curriculo</button>
-    <button type="reset" id="clear-button">Limpar</button>
+    <button class="btn waves-effect waves-light" type="submit" id="send">Enviar Curriculo <i
+        class="material-icons prefix">send</i></button>
+    <button class="btn waves-effect waves-light" type="reset" id="clear-button">Limpar <i
+        class="material-icons prefix">clear_all</i></button>
+    <br>
+    <br>
+
   </form>
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script> -->
 </body>
+
 </html>
