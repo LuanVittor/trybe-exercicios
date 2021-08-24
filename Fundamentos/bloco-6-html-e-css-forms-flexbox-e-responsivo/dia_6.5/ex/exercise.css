@@ -6,13 +6,53 @@ html {
 }
 
 @media screen and (max-width: 415px) {
-  
+  body {
+    margin: 11px;
+  }
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 20px;
+    align-items: center;
+    margin: 0px;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+  }
+
+  .aside-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aside-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content > h1 {
+    display: flex;
+    font-size: 25px;
+  }
+
+  .main-content > p {
+    font-size: 25px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    flex-flow: column wrap;
+  }
 }
 
 @media screen and (max-width: 1025px) {
-  
+
 }
 
 @media screen and (max-width: 1360px) {
-  
+
 }
