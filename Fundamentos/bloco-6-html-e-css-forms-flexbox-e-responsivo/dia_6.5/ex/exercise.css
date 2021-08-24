@@ -50,7 +50,53 @@ html {
 }
 
 @media screen and (max-width: 1025px) {
+  body {
+    margin: 35px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: plum;
+    color: white;
+    padding: 0px;
+  }
 
+  .aside-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .aside-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    
+  }
+
+  .main-content > h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+  }
+
+  .main-content > p {
+    font-size: 35px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    flex-flow: column wrap;
+  }
 }
 
 @media screen and (max-width: 1360px) {
