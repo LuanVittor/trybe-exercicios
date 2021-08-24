@@ -99,6 +99,66 @@ html {
   }
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1920px) {
+  body {
+    margin: 55px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: peru;
+    color: white;
+    padding: 10px;
+  }
 
+  .aside-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    width: 600px;
+
+
+  }
+
+  .aside-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    width: 600px;
+
+  }
+
+  .main-content > h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    /* width: 600px; */ 
+  }
+
+  .main-content > p {
+    font-size: 35px;
+    /* width: 75%;
+    width: 600px; */
+
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    flex-flow: column wrap;
+  }
 }
