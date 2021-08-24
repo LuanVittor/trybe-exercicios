@@ -49,7 +49,7 @@ html {
   }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1025px) and (min-width: 415px) {
   body {
     margin: 35px;
   }
@@ -99,7 +99,7 @@ html {
   }
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1025px) {
   body {
     margin: 55px;
   }
