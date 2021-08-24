@@ -1,0 +1,48 @@
+body {
+  margin: 25px;
+}
+
+p {
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: violet;
+    font-size: 15px;
+    margin: 50px;
+  }
+
+  img {
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: yellowgreen;
+    font-size: 100px;
+    margin: 100px;
+    max-width: 70%;
+  }
+}
