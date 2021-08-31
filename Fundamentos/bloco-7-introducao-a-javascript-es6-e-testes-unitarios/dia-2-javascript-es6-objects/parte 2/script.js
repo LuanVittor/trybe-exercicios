@@ -47,7 +47,7 @@ console.log(valores(lesson3));
 const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
 console.log(allLessons)
 
-// Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+//  Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
 
 const alunos1 = allLessons.lesson1.numeroEstudantes;
 const alunos2 = allLessons.lesson2.numeroEstudantes;
@@ -75,3 +75,50 @@ const checkPair = (obj, key, value) => {
 }
 
 console.log(checkPair(lesson3, 'materia', 'Matemática'));
+
+// Bônus
+
+// Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+
+const aulaMat = (obj) => {
+  let alunos = 0;
+  // let objArray = Object.keys(obj);
+  for (let i in obj) {
+    if (obj[i].materia === 'Matemática') {
+      alunos += obj[i].numeroEstudantes
+    }
+  }
+  return alunos;
+}
+
+console.log(aulaMat(allLessons))
+
+// Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5:
+
+// console.log(createReport(allLessons, 'Maria Clara'))
+/* {
+  professor: 'Maria Clara',
+  aulas: [ 'Matemática', 'Matemática' ],
+  estudantes: 30
+} */
+
+const relatorio = (obj, nome) => {
+  let objetoNovo = {};
+  let aulas2 = [];
+  objetoNovo['professor'] = nome;
+  objetoNovo['aulas'] = aulas2;
+  objetoNovo['estudantes'] = 0;
+  for (let i in obj) {
+    if (obj[i].professor === nome) {
+      aulas2.push(obj[i].materia);
+
+      let soma = objetoNovo.estudantes;
+      soma += obj[i].numeroEstudantes;
+      objetoNovo.estudantes = soma;
+    }
+  }
+  return objetoNovo;
+}
+console.log(relatorio(allLessons, 'Carlos'));
+
+
