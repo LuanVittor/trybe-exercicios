@@ -41,7 +41,7 @@ const mageAttack = (mage) => {
   const danoMaximo = danoMinimo * 2;
   const turnStats = {
     manaSpent: 0,
-    damageDealt: 'Not enough mana...',
+    damageDealt: 'Nao possui Mana Suficente',
   };
 
   if (mageMana > 15) {
