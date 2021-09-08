@@ -72,12 +72,12 @@ function authorWith3DotsOnName() {
     book.author.name.split(' ').filter((palavras) => palavras.endsWith('.')).length === 3
   )).name;
 }
-console.log(authorWith3DotsOnName())
+// console.log(authorWith3DotsOnName())
 
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
 
 // function authorWith3DotsOnName() {
 //   return books
 //   .find((book) => book.author.name.split(' '))
-//   .filter((point) => point.endsWith('.'))
+//   .filter((point) => point.endsWith('.')).length
 // }
