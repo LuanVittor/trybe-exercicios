@@ -1,0 +1,19 @@
+Responda às perguntas a seguir, antes de nossa aula ao vivo, para ter certeza de que você entendeu os textos. Discuta a resposta com o restante da turma (que tal uma pessoa abrir uma conversa no Slack para conversarem a respeito?!). Se bater alguma dúvida, volte aos textos!
+
+
+O que é um código que é executado de modo assíncrono? Qual é a diferença disso para um código que é executado de modo síncrono?
+# Assincrono ele acontece tudo junto, nao possui uma fila de execucao
+
+Quando você tem que enfileirar várias callbacks , que problema surge?
+# Callback Hell
+
+Por que as Promises são uma forma de se resolver esse problema?
+# pois a promisse entra em um espaco especial e nao trava a execucao de outras funcoes
+
+Quando você vai se comunicar com uma API , tal comunicação deve ser síncrona ou assíncrona? Lembre-se de que o serviço ao qual você está se conectando pode demorar muito ou pouco para dar retorno, pode estar fora do ar etc.
+
+# assincrona, para evitar o callbackhell
+
+Dada a resposta anterior, o que é fetch e para que ele serve?
+
+# fetch eh o comando q chama a promisse
