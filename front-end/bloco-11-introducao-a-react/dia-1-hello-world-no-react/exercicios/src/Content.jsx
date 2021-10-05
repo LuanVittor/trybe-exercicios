@@ -26,12 +26,12 @@ const conteudos = [
 class Content extends React.Component {
   render() {
     return (
-      <div className='conten'>
+      <div className='content'>
         {conteudos.map((element) => (
           <div key={element.conteudo} className='card'>
             <h4>{`O conteudo eh: ${element.conteudo}`}</h4>
-            <p>{`Status: ${element.bloco}`}</p>
-            <p>{`Bloco: ${element.status}`}</p>
+            <p>{`Status: ${element.status}`}</p>
+            <p>{`Bloco: ${element.bloco}`}</p>
           </div>
         ))}
       </div>
