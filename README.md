@@ -100,139 +100,139 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 11-2: _Eventos e formulários no React_
 - [ ] 11-3: _[Projeto - Movie Cards Library Stateful]()_
 
-##### Bloco 13: React
+##### Bloco 12: React
 
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [ ] 12-1: _Melhorando o reuso de componentes: props.children e PropTypes_
+- [ ] 12-2: _Ciclo de vida de componentes em React_
+- [ ] 12-3: _React Router_
+- [ ] 12-4: _[Projeto - Movie Cards Library CRUD]()_
 
-##### Bloco 14: Metodologias Ágeis
+##### Bloco 13: Metodologias Ágeis
 
-- [ ] 14-1: _Metodologias Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [ ] 13-1: _Metodologias Ágeis_
+- [ ] 13-2: _[Projeto - Frontend Online Store]()_
 
-##### Bloco 15: Testes em React
+##### Bloco 14: Testes em React
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [ ] 14-1: _Testando React com a React Testing Library_
+- [ ] 14-2: _Testando React com a React Testing Library - Parte 2_
+- [ ] 14-3: _[Projeto - Testes em React]()_
 
-##### Bloco 16: Introdução ao Redux
+##### Bloco 15: Introdução ao Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [ ] 15-1: _Introdução ao Redux_
+- [ ] 15-2: _React com Redux - Parte 1_
+- [ ] 15-3: _React com Redux - Prática_
+- [ ] 15-4: _React com Redux - Parte 2_
+- [ ] 15-5: _Testes síncronos com React-Redux_
+- [ ] 15-6: _[Projeto - Tabela com filtros de dados]()_
 
-##### Bloco 17: Projeto React
+##### Bloco 16: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [ ] 16-1: _[Projeto - Jogo de Trivia]()_
 
-##### Bloco 18: React & Context API
+##### Bloco 17: React & Context API
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [ ] 17-1: _Context API do React_
+- [ ] 17-2: _React Hooks - useState e useContext_
+- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
-##### Bloco 19: Projeto Final de Front-end
+##### Bloco 18: Projeto Final de Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [ ] 18-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+##### Bloco 19: Introdução - Bancos de dados relacionais
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [ ] 19-1: _Banco de dados SQL_
+- [ ] 19-2: _Encontrando dados em um banco de dados_
+- [ ] 19-3: _Filtrando dados de forma específica_
+- [ ] 19-4: _Manipulando tabelas_
+- [ ] 19-5: _[Projeto - All For One]()_
+
+##### Bloco 20: Bancos de dados relacionais
+
+- [ ] 20-1: _Funções mais usadas no SQL_
+- [ ] 20-2: _Descomplicando JOINs e UNIONs_
+- [ ] 20-3: _Stored Routines & Subqueries_
+- [ ] 20-4: _[Projeto - Vocabulary Booster]()_
 
 ##### Bloco 21: Bancos de dados relacionais
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [ ] 21-1: _Transformando ideias em um modelo de banco de dados_
+- [ ] 21-2: _Normalização, Formas Normais e Dumps_
+- [ ] 21-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
+- [ ] 21-3: _[Projeto - One For All]()_
 
-##### Bloco 22: Bancos de dados relacionais
+##### Bloco 22: Introdução - NoSQL
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [ ] 22-1: _MongoDB - Introdução_
+- [ ] 22-2: _Filter Operators_
+- [ ] 22-3: _[Projeto - Data Flights]()_
 
-##### Bloco 23: Introdução - NoSQL
+##### Bloco 23: Updates
 
-- [ ] 23-1: _MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [ ] 23-1: _Updates Simples_
+- [ ] 23-2: _Updates Complexos - Arrays - Parte 1_
+- [ ] 23-3: _Updates Complexos - Arrays - Parte 2_
+- [ ] 23-4: _[Projeto - Commerce]()_
 
-##### Bloco 24: Updates
+##### Bloco 24: Aggregation Framework
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
+- [ ] 24-1: _Aggregation Framework - Part 1_
+- [ ] 24-2: _Aggregation Framework - Part 2_
+- [ ] 24-3: _[Projeto - Aggregations]()_
 
-##### Bloco 25: Aggregation Framework
+##### Bloco 25: Intro - NodeJS
 
-- [ ] 25-1: _Aggregation Framework - Part 1_
-- [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _[Projeto - Aggregations]()_
+- [ ] 25-1: _NodeJS - Introdução_
+- [ ] 25-2: _NodeJS - Fluxo Assíncrono_
+- [ ] 25-3: _NodeJS - Arquitetura_
+- [ ] 25-4: _[Projeto - A CLI of Ice and Fire]()_
 
-##### Bloco 26: Intro - NodeJS
+##### Bloco 26: NodeJS
 
-- [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 26-3: _NodeJS - Arquitetura_
-- [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
+- [ ] 26-1: _Express: HTTP com Node.js_
+- [ ] 26-2: _Arquitetura de Software - Introdução ao MVC_
+- [ ] 26-3: _[Projeto - Cookmaster]()_
 
 ##### Bloco 27: NodeJS
 
-- [ ] 27-1: _Express: HTTP com Node.js_
-- [ ] 27-2: _Arquitetura de Software - Introdução ao MVC_
-- [ ] 27-3: _[Projeto - Cookmaster]()_
+- [ ] 27-1: _Arquitetura de Software - Camada de Serviço_
+- [ ] 27-2: _Arquitetura web - Rest e Restful_
+- [ ] 27-3: _[Projeto - Store Manager]()_
 
 ##### Bloco 28: NodeJS
 
-- [ ] 28-1: _Arquitetura de Software - Camada de Serviço_
-- [ ] 28-2: _Arquitetura web - Rest e Restful_
-- [ ] 28-3: _[Projeto - Store Manager]()_
+- [ ] 28-1: _NodeJS - JWT - (JSON Web Token)_
+- [ ] 28-2: _NodeJS - Upload de arquivos com Multer_
+- [ ] 28-3: _[Projeto - Cookmaster V2]()_
 
-##### Bloco 29: NodeJS
+##### Bloco 29: Introdução - Deploy
 
-- [ ] 29-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 29-3: _[Projeto - Cookmaster V2]()_
+- [ ] 29-1: _Infraestrutura - Deploy com Heroku_
+- [ ] 29-2: _Deploy - Gerenciadores de Processos_
+- [ ] 29-3: _[Projeto - Stranger Things]()_
 
-##### Bloco 30: Introdução - Deploy
+##### Bloco 30: Projeto
 
-- [ ] 30-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 30-2: _Deploy - Gerenciadores de Processos_
-- [ ] 30-3: _[Projeto - Stranger Things]()_
+- [ ] 30-1: _[Projeto - Trybeer]()_
 
-##### Bloco 31: Projeto
+##### Bloco 31: Arquitetura de Software
 
-- [ ] 31-1: _[Projeto - Trybeer]()_
+- [ ] 31-1: _Arquitetura - Princípios SOLID_
+- [ ] 31-2: _ORM - Interface da aplicação com o banco de dados_
+- [ ] 31-3: _Arquitetura de Software - DDD_
+- [ ] 31-4: _Boas prÃ¡ticas na escrita de testes_
+- [ ] 31-3: _[Projeto - API de Blogs]()_
 
-##### Bloco 32: Arquitetura de Software
+##### Bloco 32: Sockets
 
-- [ ] 32-1: _Arquitetura - Princípios SOLID_
-- [ ] 32-2: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 32-3: _Arquitetura de Software - DDD_
-- [ ] 32-4: _Boas prÃ¡ticas na escrita de testes_
-- [ ] 32-3: _[Projeto - API de Blogs]()_
-
-##### Bloco 33: Sockets
-
-- [ ] 30-1: _Sockets - TCP/UDP & NET_
-- [ ] 30-2: _Sockets - Socket.io_
-- [ ] 30-3: _[Projeto - Webchat]()_
+- [ ] 33-1: _Sockets - TCP/UDP & NET_
+- [ ] 33-2: _Sockets - Socket.io_
+- [ ] 33-3: _[Projeto - Webchat]()_
 
 ##### Bloco 34: Projeto
 
