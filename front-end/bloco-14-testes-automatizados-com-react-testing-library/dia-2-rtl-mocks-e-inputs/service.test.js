@@ -77,24 +77,24 @@ test('se concatena as strings ', () => {
 })
 
 describe("fetch dog", () => {
-  service.fetch = jest.fn();
-  afterEach(service.fetch.mockReset);
+  service.Dog = jest.fn();
+  afterEach(service.Dog.mockReset);
 
   test("testando requisição caso a promisse resolva", async () => {
-    service.fetch.mockResolvedValue("request sucess");
+    service.Dog.mockResolvedValue("request sucess");
 
-    service.fetch();
-    expect(service.fetch).toHaveBeenCalled();
-    expect(service.fetch).toHaveBeenCalledTimes(1);
-    await expect(service.fetch()).resolves.toBe("request sucess");
-    expect(service.fetch).toHaveBeenCalledTimes(2);
+    service.Dog();
+    expect(service.Dog).toHaveBeenCalled();
+    expect(service.Dog).toHaveBeenCalledTimes(1);
+    await expect(service.Dog()).resolves.toBe("request sucess");
+    expect(service.Dog).toHaveBeenCalledTimes(2);
   });
 
   test("testando requisição caso a promisse seja rejeitada", async () => {
-    service.fetch.mockRejectedValue("request failed");
+    service.Dog.mockRejectedValue("request failed");
 
-    expect(service.fetch).toHaveBeenCalledTimes(0);
-    await expect(service.fetch()).rejects.toMatch("request failed");
-    expect(service.fetch).toHaveBeenCalledTimes(1);
+    expect(service.Dog).toHaveBeenCalledTimes(0);
+    await expect(service.Dog()).rejects.toMatch("request failed");
+    expect(service.Dog).toHaveBeenCalledTimes(1);
   });
 });
