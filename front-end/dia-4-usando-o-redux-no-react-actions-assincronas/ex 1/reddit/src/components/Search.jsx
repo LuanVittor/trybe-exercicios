@@ -3,16 +3,27 @@ import { connect } from 'react-redux'
 import { fetchReddit } from '../redux/actions'
 
 class Search extends Component {
+  constructor() {
+    super();
+    this.state = {
+      redirect: false,
+    }
+  }
   render() {
-    const { getTopic } = this.props;
+    const { redirect } = this.state;
+    const { getTopic, post } = this.props;
     return (
       <div>
         <button 
         type='button'
-        onClick={ () => getTopic()}
+        onClick={ () => {
+          getTopic()
+          return this.setState({redirect: true})
+        }}
         >
           Buscar por Topicos sobre React
         </button>
+        {(redirect) && <h1>{post}</h1>}
       </div>
     )
   }
@@ -22,4 +33,9 @@ const mapDispatchToProps = (dispatch) => ({
   getTopic: (state) => dispatch(fetchReddit(state))
 })
 
-export default connect(null, mapDispatchToProps)(Search)
+const mapStateToProps = (state) => ({
+  post: state.data
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Search)
