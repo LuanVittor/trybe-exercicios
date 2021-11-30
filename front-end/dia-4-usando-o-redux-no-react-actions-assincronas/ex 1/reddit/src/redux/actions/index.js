@@ -5,7 +5,7 @@ export const resquestAPI = () => ({ type: REQUEST_API });
 
 export const getReddit = (json) => ({
    type: GET_REDDIT,
-   data: json.data.children.map((child) => child.data) 
+   data: json.data.children.map((elem) => elem.data.title) 
   });
 
   export const failure = (error) => ({

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import topics from './reducer'
+import reducer from './reducer'
 
-const rootReducer = combineReducers({ topics })
+const rootReducer = combineReducers({ reducer })
 
 export default rootReducer
