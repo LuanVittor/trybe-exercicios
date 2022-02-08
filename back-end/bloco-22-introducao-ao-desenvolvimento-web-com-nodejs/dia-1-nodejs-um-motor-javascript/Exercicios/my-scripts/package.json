@@ -1,0 +1,15 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "Calcular IMC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node imc.js"
+  },
+  "author": "Luan Vitor",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
