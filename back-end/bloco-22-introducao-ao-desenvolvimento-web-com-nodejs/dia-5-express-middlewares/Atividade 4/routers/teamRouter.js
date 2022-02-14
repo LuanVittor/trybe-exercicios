@@ -12,7 +12,7 @@ router.get('/', async(_req, res) => {
     res.status(200).json({ teams });
 });
 
-router.post('/', validations.isValid, async(req, res,) => {
+router.post('/', validations.isValid, async(req, res) => {
     const newTeam = {
         ...req.body,
         initials: req.body.initials.toUpperCase(),
