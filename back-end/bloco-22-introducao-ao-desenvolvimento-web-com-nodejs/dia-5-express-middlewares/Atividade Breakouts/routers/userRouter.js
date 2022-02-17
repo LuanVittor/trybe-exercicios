@@ -20,7 +20,7 @@ router.get('/simpsons/:id', async (req, res, next) => {
   const filterId = simp.find((elem) => elem.id === parseInt(id));
 
   if (!filterId) {
-    return res.status(404).json({ message: 'Simpson not found!' });;
+    return res.status(404).json({ message: 'Simpson not found!' });
   }
     res.status(200).json(filterId);
 })
