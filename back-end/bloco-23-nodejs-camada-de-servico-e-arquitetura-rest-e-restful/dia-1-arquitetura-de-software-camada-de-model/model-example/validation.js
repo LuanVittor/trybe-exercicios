@@ -24,6 +24,8 @@ const validateAuthor = async (req, res, next) => {
   !exist ? res.status(400).json({ message: 'Dados inválidos' }) : next();
 }
 
+
+
 module.exports = {
   validateAuthorId,
   validateTilte,

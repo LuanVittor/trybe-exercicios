@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { getAll } = require('./models/Author');
 const { validateTilte, validateAuthorId, validateAuthor } = require('./validation');
+const { create } = require('./models/Book');
 
 const app = express();
 app.use(bodyParser.json());
@@ -17,6 +18,8 @@ app.post('/books',
   validateAuthorId,
   validateAuthor,
   async (req, res) => {
+    const { title, author_id } = req.body;
+    await create(title, author_id)
     res.status(201).json({ message: 'Livro criado com sucesso! ' })
   });
 

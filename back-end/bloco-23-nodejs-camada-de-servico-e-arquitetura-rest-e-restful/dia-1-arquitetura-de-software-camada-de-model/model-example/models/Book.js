@@ -10,6 +10,12 @@ const getAllBooks = async () => {
   }));
 };
 
+const create = async (title, authorId) => connection.execute(
+  'INSERT INTO model_example.books (title, author_id) VALUES (?,?)',
+  [title, authorId],
+  );
+
 module.exports = {
   getAllBooks,
+  create,
 };
