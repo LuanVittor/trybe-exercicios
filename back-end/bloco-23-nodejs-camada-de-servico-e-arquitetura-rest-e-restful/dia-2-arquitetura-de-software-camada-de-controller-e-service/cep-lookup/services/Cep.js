@@ -27,8 +27,9 @@ const findAddressByCep = async (cepBuscado) => {
 
 const create = async ({ cep, logradouro, bairro, localidade, uf }) => {
   const existingCep = await Cep.findAddressByCep(cep);
-  if (existingCep) {
+  if (existingCep && existingCep !== null) {
     return {
+      status: 409,
       error: {
         code: 'alreadyExists',
         message: 'CEP já existente',

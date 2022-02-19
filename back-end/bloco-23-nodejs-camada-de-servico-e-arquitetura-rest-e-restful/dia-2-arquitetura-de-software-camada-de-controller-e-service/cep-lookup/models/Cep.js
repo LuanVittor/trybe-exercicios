@@ -22,16 +22,18 @@ const findAddressByCep = async (cepBuscado) => {
 
   const result = await connection.execute(query, [treatedCep])
     .then(([results]) => (results.length ? results[0] : null));
-  if (!result) return null;
+  if (result === null) return null;
   
   return getNewCep(result);
 };
 
 const create = async ({ cep, logradouro, bairro, localidade, uf }) => {
+  const treatedCep = cep.replace('-', '');
+  
   const query = 'INSERT INTO ceps (cep, logradouro, bairro, localidade, uf) VALUES (?, ?, ?, ?, ?)';
 
-  await connection.execute(query, [cep, logradouro, bairro, localidade, uf]);
-
+  await connection.execute(query, [treatedCep, logradouro, bairro, localidade, uf]);
+  
   return { cep, logradouro, bairro, localidade, uf }
 }
 
