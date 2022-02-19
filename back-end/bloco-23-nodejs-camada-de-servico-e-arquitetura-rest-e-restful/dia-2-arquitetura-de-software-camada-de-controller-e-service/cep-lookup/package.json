@@ -16,7 +16,8 @@
     "express": "^4.17.3",
     "express-rescue": "^1.1.31",
     "joi": "^17.6.0",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "node-fetch": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

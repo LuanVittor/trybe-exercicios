@@ -1,4 +1,5 @@
 const Cep = require('../models/Cep');
+const  api  = require('../models/reqApi');
 
 const CEP_REGEX = /\d{5}-?\d{3}/;
 
@@ -13,16 +14,21 @@ const findAddressByCep = async (cepBuscado) => {
     }
   }
   const cep = await Cep.findAddressByCep(cepBuscado);
-  if (!cep) {
+
+  if (cep) {
+    return cep;
+  }
+
+  const ApiCep = await api.lookupCep(cepBuscado)
+
+  if (!ApiCep) {
     return {
-      status: 404,
       error: {
         code: 'notFound',
-        message: 'CEP não encontrado'
+        message: 'CEP não encontrado',
       },
     };
   }
-  return cep;
 };
 
 const create = async ({ cep, logradouro, bairro, localidade, uf }) => {
