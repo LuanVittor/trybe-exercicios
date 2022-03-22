@@ -3,7 +3,7 @@ export function convert(value: number, base: string, convert: string) {
 
   function makeError(unity: string) {
     throw new Error(`A unidade ${unity} não é uma unidade válida.`)
-}
+  }
   if (!units.includes(base)) makeError(base); // se a unidade base não for válida lançamos um erro
   if (!units.includes(convert)) makeError(convert); // se a unidade para a conversão não for válida lançamos um erro
 
@@ -18,15 +18,15 @@ export function convertWeight(value: number, base: string, convert: string) {
   const units = ["kg", "hg", "dag", "g", "dg", "cg", "mg"];
 
   function makeError(unity: string) {
-      throw new Error(`A unidade ${unity} não é uma unidade válida.`)
+    throw new Error(`A unidade ${unity} não é uma unidade válida.`)
   }
 
   if (!units.includes(base)) makeError(base);
-  if (!units.includes(convert)) makeError(convert); 
+  if (!units.includes(convert)) makeError(convert);
 
-  const forIndex = units.indexOf(base); 
-  const toIndex = units.indexOf(convert); 
-  const exponent = (toIndex - forIndex); 
+  const forIndex = units.indexOf(base);
+  const toIndex = units.indexOf(convert);
+  const exponent = (toIndex - forIndex);
 
   return value * Math.pow(10, exponent);
 }
@@ -35,15 +35,15 @@ export function capacity(value: number, base: string, convert: string) {
   const units = ["kl", "hl", "dal", "l", "dl", "cl", "ml"];
 
   function makeError(unity: string) {
-      throw new Error(`A unidade ${unity} não é uma unidade válida.`)
+    throw new Error(`A unidade ${unity} não é uma unidade válida.`)
   }
 
   if (!units.includes(base)) makeError(base);
-  if (!units.includes(convert)) makeError(convert); 
+  if (!units.includes(convert)) makeError(convert);
 
-  const forIndex = units.indexOf(base); 
-  const toIndex = units.indexOf(convert); 
-  const exponent = (toIndex - forIndex); 
+  const forIndex = units.indexOf(base);
+  const toIndex = units.indexOf(convert);
+  const exponent = (toIndex - forIndex);
 
   return value * Math.pow(10, exponent);
 }
@@ -52,15 +52,15 @@ export function area(value: number, base: string, convert: string) {
   const units = ["km²", "hm²", "dam²", "m²", "dm²", "cm²", "mm²"];
 
   function makeError(unity: string) {
-      throw new Error(`A unidade ${unity} não é uma unidade válida.`)
+    throw new Error(`A unidade ${unity} não é uma unidade válida.`)
   }
 
   if (!units.includes(base)) makeError(base);
-  if (!units.includes(convert)) makeError(convert); 
+  if (!units.includes(convert)) makeError(convert);
 
-  const forIndex = units.indexOf(base); 
-  const toIndex = units.indexOf(convert); 
-  const exponent = (toIndex - forIndex); 
+  const forIndex = units.indexOf(base);
+  const toIndex = units.indexOf(convert);
+  const exponent = (toIndex - forIndex);
 
   return value * Math.pow(10, exponent);
 }
