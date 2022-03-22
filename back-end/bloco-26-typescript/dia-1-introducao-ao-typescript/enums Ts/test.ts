@@ -16,7 +16,7 @@ enum RainbowCollors {
 }
 
 enum save {
-  save = 1,
+  save,
   print,
   open,
   see,
