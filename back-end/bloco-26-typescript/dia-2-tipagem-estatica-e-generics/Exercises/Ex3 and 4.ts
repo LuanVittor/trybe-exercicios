@@ -36,3 +36,8 @@ const PizzaCommon: Pizza = {
   slices: 8
 }
 
+const PizzaVegetarian: Pizza = {
+  flavor: 'Marguerita',
+  slices: 6
+}
+
