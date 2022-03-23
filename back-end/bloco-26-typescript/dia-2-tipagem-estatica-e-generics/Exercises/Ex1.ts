@@ -25,5 +25,16 @@ class Car {
   openTheDoor(door: number): void {
     console.log(`abrindo porta ${door}`);
   }
-  
+
+  speedUp(): void {
+    console.log("Acelerando carro.");
+  }
+
+  speedDown(): void {
+    console.log("Reduzindo a velocidade do carro.");
+  }
+
+  stop(): void {
+    console.log("Parando carro.");
+}
 }
