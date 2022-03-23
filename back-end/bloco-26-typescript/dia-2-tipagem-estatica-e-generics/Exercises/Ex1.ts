@@ -1,18 +1,19 @@
-enum colors {
-  preta,
-  branca,
-  vermelha,
-  prata,
+export enum Colors {
+  BLACK = "Preta",
+  WHITE = "Branca",
+  RED = "Vermelha",
+  SILVER = "Prata"
 }
 
-interface Car {
+
+export interface Car {
   brand: string,
-  color: colors;
+  color: Colors;
   doors: number
 }
 
-class Car {
-  constructor(brand: string, color: colors, doors: number) {
+export class Car {
+  constructor(brand: string, color: Colors, doors: number) {
     this.brand = brand;
     this.color = color;
     this.doors = doors;
