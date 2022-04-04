@@ -28,6 +28,7 @@ var Tv = /** @class */ (function () {
     return Tv;
 }());
 var tv1 = new Tv('LG', 85, 2160, ['hdmi', 'vga']);
+
 // console.log(tv1.connections);
 tv1.turnOn();
 tv1.connectedTo = 'hdmi';
