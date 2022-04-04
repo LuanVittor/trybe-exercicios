@@ -21,3 +21,4 @@ class Tv {
 const tv1 = new Tv('LG', 85, 2160, ['hdmi', 'vga'])
 console.log(tv1.connections);
 tv1.turnOn()
+
