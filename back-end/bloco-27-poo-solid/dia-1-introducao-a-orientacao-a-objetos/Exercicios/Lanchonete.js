@@ -1,6 +1,7 @@
 var Client = /** @class */ (function () {
     function Client(name) {
-        this._name = name;
+        this._name = String();
+        this.name = name;
     }
     Object.defineProperty(Client.prototype, "name", {
         get: function () {
@@ -19,8 +20,10 @@ var Client = /** @class */ (function () {
 }());
 var OrderItem = /** @class */ (function () {
     function OrderItem(name, price) {
-        this._name = name;
-        this._price = price;
+        this._name = String();
+        this._price = Number();
+        this.name = name;
+        this.price = price;
     }
     Object.defineProperty(OrderItem.prototype, "name", {
         get: function () {
