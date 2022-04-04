@@ -107,6 +107,15 @@ var Order = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
+    Order.prototype.sumOrder = function () {
+        return this.items.reduce(function (previousValue, item) {
+            var total = previousValue += item.price;
+            return total;
+        }, 0);
+    };
+    Order.prototype.calculateDiscount = function () {
+        return this.sumOrder() * (1 - this.discount);
+    };
     return Order;
 }());
 var client = new Client('João');
@@ -115,3 +124,5 @@ var juice = new OrderItem('Suco de Abacaxí', 5.00);
 var dessert = new OrderItem('Gelatina de Uva', 2.50);
 var order = new Order(client, [sandwiche, juice, dessert], 'dinheiro', 0.10);
 console.log(order);
+console.log('Valor normal: ', order.sumOrder());
+console.log('Valor com desconto: ', order.calculateDiscount());

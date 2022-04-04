@@ -36,7 +36,6 @@ class OrderItem {
         if (value.length < 3) {
             throw new Error('O nome deve conter no mínimo 3 caracteres.');
         }
-
         this._name = value;
     }
 
@@ -46,7 +45,6 @@ class OrderItem {
 
     set price(value: number) {
         if (value < 0) throw new Error('O preço deve ser positivo.');
-
         this._price = value;
     }
 }
@@ -102,6 +100,16 @@ class Order {
         }
         this._discount = value;
     }
+
+    sumOrder(): number {
+        return this.items.reduce((previousValue, item) => {
+            const total = previousValue += item.price;
+            return total;
+        }, 0)
+    }
+    calculateDiscount(): number {
+        return this.sumOrder() * (1 - this.discount);
+    }
 }
 
 const client = new Client('João');
@@ -113,3 +121,5 @@ const dessert = new OrderItem('Gelatina de Uva', 2.50);
 const order = new Order(client, [sandwiche, juice, dessert], 'dinheiro', 0.10);
 
 console.log(order);
+console.log('Valor normal: ', order.sumOrder());
+console.log('Valor com desconto: ', order.calculateDiscount());
