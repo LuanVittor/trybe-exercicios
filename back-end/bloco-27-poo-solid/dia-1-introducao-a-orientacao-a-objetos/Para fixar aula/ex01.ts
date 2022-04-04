@@ -1,24 +1,39 @@
 class Tv {
-  brand: string;
-  size: number;
-  resolution: number;
-  connections: string[];
-  connectedTo: string;
+  private _brand: string;
+  private _size: number;
+  private _resolution: number;
+  private _connections: string[];
+  private _connectedTo: string;
 
   constructor(brand: string, size: number, resolution: number, connections: string[]) {
     console.log(`Buying TV ${brand}`);
-    this.brand = brand;
-    this.size = size;
-    this.resolution = resolution;
-    this.connections = connections;
+    this._brand = brand;
+    this._size = size;
+    this._resolution = resolution;
+    this._connections = connections;
   }
 
-  turnOn() {
-    console.log(`ligando a tv da marca ${this.brand}`)
+  turnOn(): void {
+    console.log(`ligando a tv da marca ${this._brand}`)
+  }
+  
+  get connectedTo(): string {
+    return this._connectedTo;
+  }
+
+  set connectedTo(value: string) {
+    if (this._connections.includes(value)) {
+      this._connectedTo = value;
+      console.log(this._connectedTo);
+    } else {
+      console.log('Sorry, connection unavailable!');
+    }
   }
 }
 
 const tv1 = new Tv('LG', 85, 2160, ['hdmi', 'vga'])
-console.log(tv1.connections);
+// console.log(tv1.connections);
 tv1.turnOn()
+tv1.connectedTo = 'Wi-Fi';
+console.log('Connected to: ', tv1.connectedTo);
 
