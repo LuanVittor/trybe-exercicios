@@ -70,5 +70,5 @@ console.log(jessica);
 console.log(tamires);
 console.log(fernando);
 
-// deve retornar erro
+// deve retornar erro:
 // fernando.worksGrades = [45, 45, 45];
