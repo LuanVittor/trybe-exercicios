@@ -1,6 +1,6 @@
 // Person.ts
 
-export default class Person {
+export default abstract class Person {
   private _name: string = String();
   private _birthDate: Date = new Date();
 
@@ -58,10 +58,10 @@ console.log(luiza);
 const pessoa = new Person('Carolina da Silva', new Date('2005/03/17'));
 
 // isso não deve gerar nenhum erro
-const carolina = new Student('Carolina da Silva', new Date('2005/03/17'));
-console.log(carolina);
+// const carolina = new Student('Carolina da Silva', new Date('2005/03/17'));
+// console.log(carolina);
 
-const math = new Subject('Matemática');
+// const math = new Subject('Matemática');
 // isso também não deve gerar nenhum erro
-const marta = new Teacher('Marta da Silva', new Date('1980/03/30'), 2000, math);
-console.log(marta);
+// const marta = new Teacher('Marta da Silva', new Date('1980/03/30'), 2000, math);
+// console.log(marta);
