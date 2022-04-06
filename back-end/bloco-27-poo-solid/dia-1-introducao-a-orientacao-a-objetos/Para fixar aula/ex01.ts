@@ -6,7 +6,7 @@ class Tv {
   private _connectedTo: string;
 
   constructor(brand: string, size: number, resolution: number, connections: string[]) {
-    console.log(`Buying TV ${brand}`);
+    console.log(`comprando TV ${brand}`);
     this._brand = brand;
     this._size = size;
     this._resolution = resolution;
@@ -26,7 +26,7 @@ class Tv {
       this._connectedTo = value;
       console.log(this._connectedTo);
     } else {
-      console.log('Sorry, connection unavailable!');
+      console.log('conexao nao exite');
     }
   }
 }
