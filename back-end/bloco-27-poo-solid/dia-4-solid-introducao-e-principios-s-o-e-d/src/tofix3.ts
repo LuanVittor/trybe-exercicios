@@ -88,6 +88,7 @@ class EmailNotification implements Notificator {
 
 class PhoneNotification implements Notificator {
   private phone: number;
+
   constructor(phone: number) {
     this.phone = phone;
   }
@@ -106,7 +107,8 @@ export default class ReadingTracker {
 
   // O construtor deixa de instanciar um novo objeto do tipo Notificator
   // e agora passa a receber ele como parâmetro
-  constructor(readingGoal: number, public _notificator: Notificator = new ConsoleNotification()) {
+  // eslint-disable-next-line no-unused-vars
+  constructor(readingGoal: number, public notificator: Notificator = new ConsoleNotification()) {
     this.readingGoal = readingGoal;
     this.booksRead = 0;
   }
@@ -115,10 +117,10 @@ export default class ReadingTracker {
     this.booksRead += readsCount;
     if (this.booksRead >= this.readingGoal) {
       this.notificator.sendNotification(
-        "Congratulations! You've reached your reading goal!",
+        'Congratulations! You\'ve reached your reading goal!',
       );
       return;
     }
-    this.notificator.sendNotification("There are still some books to go!");
+    this.notificator.sendNotification('There are still some books to go!');
   }
 }
