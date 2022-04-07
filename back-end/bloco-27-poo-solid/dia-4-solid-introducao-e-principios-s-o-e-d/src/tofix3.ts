@@ -65,7 +65,7 @@
 // Como a alteração será feita apenas no construtor da classe `ReadingTracker`, o restante do código permanece inalterado.
 
 interface Notificator {
-  sendNotification(message: string): void;
+  sendNotification(_message: string): void;
 }
 
 class ConsoleNotification implements Notificator {
@@ -76,13 +76,13 @@ class ConsoleNotification implements Notificator {
 
 class EmailNotification implements Notificator {
   private email: string;
+
   constructor(email: string) {
     this.email = email;
   }
+
   sendNotification(message: string) {
-    console.log(
-      `Here should go the implementation to send notification to the email: ${this.email} - ${message}`
-    );
+    console.log(`Here should go  to send notification to the email${this.email}-${message}`);
   }
 }
 
@@ -91,9 +91,10 @@ class PhoneNotification implements Notificator {
   constructor(phone: number) {
     this.phone = phone;
   }
+
   sendNotification(message: string) {
     console.log(
-      `Here should go the implementation to send notification to the phone ${this.phone} - ${message}`
+      `Here should go the to send notification to the phone ${this.phone} - ${message}`
     );
   }
 }
