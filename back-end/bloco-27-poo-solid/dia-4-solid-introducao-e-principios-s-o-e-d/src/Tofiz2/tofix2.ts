@@ -16,7 +16,7 @@
 //   }
 // };
 
-type Notification = { type: string, send: (_: string) => void };
+type Notification = { type: string, send: (_message: string) => void };
 
 // Criando variáveis para guardar cada tipo aceito por nossa função
 const consoleNotification: Notification = {
