@@ -1,4 +1,3 @@
-// ./index.ts
 import CepService from './CepService';
 
 async function main() {
