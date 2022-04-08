@@ -25,6 +25,7 @@ import FooCepAPI from "./FooCepAPI";
 class CepService {
   private readonly cepApi: FooCepAPI;
 
+  // add um valor padrao para o parametro cepApi
   constructor(cepApi: FooCepAPI) {
     this.cepApi = cepApi;
   }
