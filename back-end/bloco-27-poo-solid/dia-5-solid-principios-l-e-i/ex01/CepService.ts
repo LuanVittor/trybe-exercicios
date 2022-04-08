@@ -21,9 +21,10 @@
 // aplicando a tecnica de injecao de dependencia
 
 import FooCepAPI from "./FooCepAPI";
+import ICepAPI from "./ICepAPI";
 
 class CepService {
-  private readonly cepApi: FooCepAPI;
+  private readonly cepApi: ICepAPI;
 
   // add um valor padrao para o parametro cepApi
   constructor(cepApi: FooCepAPI) {
