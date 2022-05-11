@@ -114,3 +114,15 @@ db.movies.find({
   ratings: true,
   _id: false
 })
+
+// Retorne os filmes da categoria adventure e com ratings maior do que 103, exibindo apenas os campos title, ratings e category.
+
+db.movies.find({
+  category: "adventure",
+  ratings: { $elemMatch: { $gt: 103 } }
+}, {
+  title: true,
+  ratings: true,
+  category: true,
+  _id: false
+})
