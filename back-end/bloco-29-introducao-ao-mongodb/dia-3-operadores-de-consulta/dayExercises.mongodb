@@ -154,3 +154,17 @@ db.movies.find({
   title: true,
   _id: false
 })
+
+// Retorne os filmes da categoria "sci-fi" ou que possua o ratings maior do que 199, exibindo apenas os campos title, ratings e category.
+
+db.movies.find({
+  $or: [
+    { category: "sci-fi" },
+    { ratings: { $gt: 199 } }
+  ]
+}, {
+  title: true,
+  ratings: true,
+  category: true,
+  _id: false
+})
