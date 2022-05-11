@@ -168,3 +168,19 @@ db.movies.find({
   category: true,
   _id: false
 })
+
+// Retorne os filmes em que o ratings possua tamanho 4 e que seja da category "adventure" ou "family", mas que não tenha o imdbRating menor que 7.
+
+db.movies.find({
+  $and: [
+    { ratings: { $size: 4 } },
+    { $or: [
+      { category: "adventure" },
+      { category: "family" }
+    ]},
+    { imdbRating: { $gt: 7 } }
+  ]
+}, {
+  title: true,
+  _id: false
+})
