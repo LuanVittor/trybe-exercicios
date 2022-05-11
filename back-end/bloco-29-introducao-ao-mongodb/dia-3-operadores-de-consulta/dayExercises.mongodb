@@ -66,3 +66,22 @@ db.movies.find({
   }
 })
 
+//  Agora retorne os filmes que contenham action e sci-fi no array category e possuem nota do IMDB maior do que 7.
+
+db.movies.find({
+  category: {
+    $all: [ "action", "sci-fi"]
+  },
+  imdbRating: { $gt: 7 }
+})
+
+// Retorne todos os filmes com ratings maior do que 103, exibindo apenas os campos title e ratings.
+
+db.movies.find({
+  ratings: { $elemMatch: { $gt: 103 } }
+}, {
+  title: true,
+  ratings: true,
+  _id: false
+})
+
