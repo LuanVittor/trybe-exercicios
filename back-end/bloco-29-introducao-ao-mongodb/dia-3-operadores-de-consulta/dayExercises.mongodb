@@ -194,3 +194,13 @@ db.movies.find({
   description: true,
   _id: false
 })
+
+// Utilizando o operador $regex, retorne todos os filmes em que a descrição termine com a palavra "humanity."
+
+db.movies.find({
+  description: { $regex: /humanity.$/i }
+}, {
+  title: true,
+  description: true,
+  _id: false
+})
