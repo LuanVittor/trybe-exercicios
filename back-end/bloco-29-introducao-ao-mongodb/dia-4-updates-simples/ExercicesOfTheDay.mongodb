@@ -452,3 +452,22 @@ db.xmen.insertMany([
     "class": "unknown"
   }
 ]);
+
+// Exercício 14: Remova o campo class dos documentos que possuem esse campo com o valor unknown.
+
+db.xmen.updateMany(
+  { class: "unknown" },
+  {
+    $currentDate: { lastUpdate: { $type: "timestamp" } },
+    $unset: { class: "" },
+  },
+);
+
+// Exercício 15: Produza uma query que renomeie os campos de name para hero_name, e de true_name para full_name; adicione o campo power com valor 100, em todos os documentos.
+
+db.xmen.updateMany({},
+  {
+    $currentDate: { lastUpdate: { $type: "timestamp" } },
+    $rename: {name: "hero_name", true_name: "full_name"},
+    $set: {power: 100}}
+);
