@@ -60,3 +60,14 @@ R: Query -> db.movies.updateMany(
   { $set: { 'cast.$[element].character': 'Marv' } },
   { arrayFilters: [{ 'element.actor': 'Daniel Stern'}]}
 );
+
+🚀 Exercício 10: Crie um array de documentos chamado cast para o filme Batman com os seguintes dados:
+--> {"character": "Batman"}, {"character": "Alfred"}, {"character": "Coringa"} <--
+R: Query -> db.movies.updateMany(
+  { title: 'Batman' },
+  { $set: { cast: [
+    { character: 'Batman' },
+    { character: 'Alfred' },
+    { character: 'Coringa' }
+  ] } },
+);
