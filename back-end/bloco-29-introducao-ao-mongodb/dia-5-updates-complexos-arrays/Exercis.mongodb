@@ -53,3 +53,10 @@ R: Query -> db.movies.updateMany(
     { actor: 'Daniel Stern' }
   ] } }
 );
+
+🚀 Exercício 9: Adicione o campo character com o valor Marv ao array de cast em que o campo actor seja igual a Daniel Stern no filme Home Alone. Dica: Leia aqui(https://www.mongodb.com/docs/manual/reference/operator/update/positional/) sobre o operador $.
+R: Query -> db.movies.updateMany(
+  { title: 'Home Alone' },
+  { $set: { 'cast.$[element].character': 'Marv' } },
+  { arrayFilters: [{ 'element.actor': 'Daniel Stern'}]}
+);
