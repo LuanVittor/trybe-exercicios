@@ -12,3 +12,9 @@ R: Query -> db.movies.updateOne(
     $each: ['villain', 'comic-based']
   } } }
 );
+
+🚀 Exercício 3: Remova a categoria "action" do filme Batman.
+R: Query -> db.movies.updateOne(
+  { title: 'Batman' },
+  { $pull: { category: 'action' } }
+);
