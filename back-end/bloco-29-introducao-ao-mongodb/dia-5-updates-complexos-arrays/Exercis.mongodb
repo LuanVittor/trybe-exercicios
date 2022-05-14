@@ -1,5 +1,5 @@
 
-🚀 Exercício 1: Adicione a categoria "superhero" ao filme Batman.
+Exercício 1: Adicione a categoria "superhero" ao filme Batman.
 R: Query -> db.movies.updateOne(
   { title: 'Batman' },
   { $push: { category: 'superhero' } }
@@ -13,25 +13,25 @@ R: Query -> db.movies.updateOne(
   } } }
 );
 
-🚀 Exercício 3: Remova a categoria "action" do filme Batman.
+Exercício 3: Remova a categoria "action" do filme Batman.
 R: Query -> db.movies.updateOne(
   { title: 'Batman' },
   { $pull: { category: 'action' } }
 );
 
-🚀 Exercício 4: Remova o primeiro elemento do array category do filme Batman.
+Exercício 4: Remova o primeiro elemento do array category do filme Batman.
 R: Query -> db.movies.updateOne(
   { title: 'Batman' },
   { $pop: { category: -1 } }
 );
 
-🚀 Exercício 5: Remova o último elemento do array category do filme Batman.
+Exercício 5: Remova o último elemento do array category do filme Batman.
 R: Query -> db.movies.updateOne(
   { title: 'Batman' },
   { $pop: { category: 1 } }
 );
 
-🚀 Exercício 6: Adicione o elemento "action" ao array category do filme Batman, garantindo que esse valor não se duplique.
+Exercício 6: Adicione o elemento "action" ao array category do filme Batman, garantindo que esse valor não se duplique.
 R: Query -> db.movies.updateOne(
   { title: 'Batman' },
   { $addToSet: { category: 'action' } }
@@ -54,14 +54,14 @@ R: Query -> db.movies.updateMany(
   ] } }
 );
 
-🚀 Exercício 9: Adicione o campo character com o valor Marv ao array de cast em que o campo actor seja igual a Daniel Stern no filme Home Alone. Dica: Leia aqui(https://www.mongodb.com/docs/manual/reference/operator/update/positional/) sobre o operador $.
+Exercício 9: Adicione o campo character com o valor Marv ao array de cast em que o campo actor seja igual a Daniel Stern no filme Home Alone. Dica: Leia aqui(https://www.mongodb.com/docs/manual/reference/operator/update/positional/) sobre o operador $.
 R: Query -> db.movies.updateMany(
   { title: 'Home Alone' },
   { $set: { 'cast.$[element].character': 'Marv' } },
   { arrayFilters: [{ 'element.actor': 'Daniel Stern'}]}
 );
 
-🚀 Exercício 10: Crie um array de documentos chamado cast para o filme Batman com os seguintes dados:
+Exercício 10: Crie um array de documentos chamado cast para o filme Batman com os seguintes dados:
 --> {"character": "Batman"}, {"character": "Alfred"}, {"character": "Coringa"} <--
 R: Query -> db.movies.updateMany(
   { title: 'Batman' },
@@ -91,7 +91,7 @@ R: Query -> db.movies.updateMany(
   ] }
 );
 
-🚀 Exercício 12: Adicione aos atores de cast do character Batman do filme Batman os valores "Michael Keaton", "Val Kilmer" e "George Clooney", e deixe o array em ordem alfabética.
+Exercício 12: Adicione aos atores de cast do character Batman do filme Batman os valores "Michael Keaton", "Val Kilmer" e "George Clooney", e deixe o array em ordem alfabética.
 Dica: Leia aqui(https://www.mongodb.com/docs/manual/reference/operator/update/positional/) sobre o operador $.
 R: Query -> db.movies.updateMany(
   { title: 'Batman' },
